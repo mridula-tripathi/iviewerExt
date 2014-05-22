@@ -1,0 +1,28 @@
+.thumbnail
+{
+    width: 1180px;
+    height: 480px;
+    position: relative;
+    border: 1px cadetblue solid;
+}
+img {
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin: 10px;
+}
+
+.wrapper
+{
+    overflow: hidden;
+}
+a{
+    display: inline-block;
+
+}
+a span {
+    display: block;
+    height: 200px;
+    width: 200px;
+}
+

@@ -1,0 +1,10 @@
+{
+    "FULLSCREEN": "Full Screen",
+    "EXIT_FULLSCREEN": "Exit Fullscreen",
+    "ZOOM_IN": "Zoom in",
+    "ZOOM_OUT": "Zoom out",
+    "ACTUAL_SIZE": "Actual Size",
+    "FIT_TO_SCREEN": "Fit To Screen",
+    "LOADING_MESSAGE": "Loading...",
+    "LOAD_ERROR_MESSAGE": "Error in loading image..."
+}
