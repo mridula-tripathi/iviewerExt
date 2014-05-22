@@ -28,8 +28,6 @@
             this.previewImage = jQuery('a.iviewerenabled');
 
             //if(supportedFormats.indexOf(format) !== -1) {
-            this.previewImage.find('span.bMrTAbs').addClass('iviewer_span');
-            this.previewImage.find('span.bMrTAbs .iconZoom24').addClass('iviewer_zoom_icon');
             /*binding click event for anchors that have iviewer associated with them*/
             jQuery(document).on("click", 'a.iviewerenabled', function (e) {
                 e.stopPropagation();

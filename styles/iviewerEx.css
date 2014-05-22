@@ -70,33 +70,14 @@
     display: none!important;
 }
 
-.loadMessage {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    display: none;
-    color: red;
-    text-align: center;
-    font-weight: bold;
-    font-size: x-large;
-    font-family: serif;
-}
-
-
-.iviewer_zoom_icon{
-    background-image: url(img/iviewer.maximize.png);
-    background-position: center;
-
-}
-
-.iviewer_zoom_icon {
+span.bMrTAbs .iconZoom24 {
     background-image: url(img/iviewer.maximize.png);
     background-position: center;
     font-size: 21px;
     padding: 0 10px;
 }
 
-.iviewer_span {
+span.bMrTAbs {
     display: inline-block;
     bottom: 30px;
     right: 30px;
