@@ -7,18 +7,18 @@
 (function (jQuery) {
     var viewer = {
         initialize: function (format, options) {
-            var self = this,
-                body = jQuery("body");
+            var self = this;
+            this.body = jQuery("body");
             options = jQuery.extend({
 
             }, options || {});
             /*supported formats*/
             var supportedFormats = ['png', 'jpeg', 'jpg', 'gif', 'bmp'];
-            this.wrapper = body.find('.wrapper');
+            this.wrapper = this.body.find('.wrapper');
             if (this.wrapper.length === 0) {
                 this.wrapper = this.constructViewer();
             }
-            jQuery.getJSON( "../lang/messages.json", function( data ) {
+            jQuery.getJSON("../lang/messages.json", function (data) {
                 self.messages = data;
             });
 
@@ -47,22 +47,20 @@
              }*/
         },
         constructViewer: function () {
-            var objBody = jQuery("body").first();
             return jQuery('<div class="wrapper" id="wrapper">' +
-                                '<div id="viewer" class="viewer">' +
-                                    '<div class="loader">' +
-                                        '<div class="iviewer-spinner">' +
-                                        '</div>' +
-                                        '<span></span>' +
-                                    '</div>' +
-                                '</div>' +
-                            '</div>')
-                .appendTo(objBody);
+                '<div id="viewer" class="viewer">' +
+                '<div class="loader">' +
+                '<div class="iviewer-spinner">' +
+                '</div>' +
+                '<span></span>' +
+                '</div>' +
+                '</div>' +
+                '</div>')
+                .appendTo(this.body);
         },
         start: function (imgUrl) {
             var self = this;
-
-                self.imageViewer = self.imgcontainer.iviewer(jQuery.extend({
+            self.imageViewer = self.imgcontainer.iviewer(jQuery.extend({
                 src: imgUrl,
                 zoom_min: 5,
                 zoom_delta: 1.5,
@@ -90,7 +88,7 @@
                         self.imgcontainer.find('.iviewer_zoom_zero').attr('title', self.messages.ACTUAL_SIZE);
                         self.imgcontainer.find('.iviewer_zoom_fit').attr('title', self.messages.FIT_TO_SCREEN);
                         self.imgcontainer.find('.iviewer_button').wrapAll('<div id="viewerControlContainer"></div>');
-                        jQuery('.iviewer_button').show();
+                        self.imgcontainer.find('.iviewer_button').show();
                     }
                 },
                 onErrorLoad: function (ev, src) {

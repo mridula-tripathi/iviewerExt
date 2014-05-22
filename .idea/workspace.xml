@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a7fadd8-5ea6-49c5-a681-b0bb938cebe5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/iviewerExt.js" afterPath="$PROJECT_DIR$/js/iviewerExt.js" />
     </list>
     <ignored path="image.iws" />
@@ -60,8 +62,8 @@
       <file leaf-file-name="iviewerExt.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/iviewerExt.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.80977315" vertical-offset="2521" max-vertical-offset="3094">
-              <caret line="121" column="43" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
+            <state vertical-scroll-proportion="2.4328098" vertical-offset="1428" max-vertical-offset="3060">
+              <caret line="166" column="13" selection-start-line="166" selection-start-column="13" selection-end-line="166" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -118,6 +120,10 @@
         <option value="$PROJECT_DIR$/js/iviewerExt.js" />
       </list>
     </option>
+  </component>
+  <component name="JsBowerSettings">
+    <exe-path />
+    <config-path />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -230,7 +236,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.lastSelected" value="Settings.JavaScript.Linters.JSLint" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -502,12 +508,12 @@
       <workItem from="1399633728533" duration="1358000" />
       <workItem from="1399973556515" duration="945000" />
       <workItem from="1400071759116" duration="4695000" />
-      <workItem from="1400562228924" duration="20625000" />
+      <workItem from="1400562228924" duration="21087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125341000" />
+    <option name="totallyTimeSpent" value="125803000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -699,8 +705,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/iviewerExt.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.80977315" vertical-offset="2521" max-vertical-offset="3094">
-          <caret line="121" column="43" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
+        <state vertical-scroll-proportion="2.4328098" vertical-offset="1428" max-vertical-offset="3060">
+          <caret line="166" column="13" selection-start-line="166" selection-start-column="13" selection-end-line="166" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
