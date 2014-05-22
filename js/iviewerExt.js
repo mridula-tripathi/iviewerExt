@@ -3,7 +3,6 @@
  * on click of anchor image is opened in full screen with zoom-in, zoom-out, fit to width and 1:1 controls.
  * */
 
-/*supported formats*/
 
 (function (jQuery) {
     var viewer = {
@@ -13,14 +12,16 @@
             options = jQuery.extend({
 
             }, options || {});
+            /*supported formats*/
             var supportedFormats = ['png', 'jpeg', 'jpg', 'gif', 'bmp'];
-            if (body.find('.wrapper').length === 0) {
-                this.constructViewer();
+            this.wrapper = body.find('.wrapper');
+            if (this.wrapper.length === 0) {
+                this.wrapper = this.constructViewer();
             }
             jQuery.getJSON( "../lang/messages.json", function( data ) {
                 self.messages = data;
             });
-            this.wrapper = body.find('.wrapper');
+
             this.imgcontainer = this.wrapper.find('.viewer');
 
             this.loader = this.imgcontainer.find('.loader');
@@ -47,7 +48,16 @@
         },
         constructViewer: function () {
             var objBody = jQuery("body").first();
-            jQuery('<div class="wrapper" id="wrapper"><div id="viewer" class="viewer"><div class="loader"><div class="iviewer-spinner"></div><span></span></div></div></div>').appendTo(objBody);
+            return jQuery('<div class="wrapper" id="wrapper">' +
+                                '<div id="viewer" class="viewer">' +
+                                    '<div class="loader">' +
+                                        '<div class="iviewer-spinner">' +
+                                        '</div>' +
+                                        '<span></span>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>')
+                .appendTo(objBody);
         },
         start: function (imgUrl) {
             var self = this;
@@ -100,10 +110,12 @@
 
                 });
             }
-
+            /*on fullscreen callback*/
             jQuery(document).on("webkitfullscreenchange mozfullscreenchange fullscreenchange MSFullscreenChange", function (event) {
                 if (document.webkitFullscreenElement || document.mozFullScreenElement || document.fullscreenElement || document.msFullscreenElement || document.webkitIsFullScreen) {
+                    /*do nothing when enter fullscreen*/
                 } else {
+                    /*destroy viewer when exit fullscreen*/
                     self.destroyViewer();
                 }
             });
