@@ -48,14 +48,15 @@
         },
         constructViewer: function () {
             return jQuery('<div class="wrapper" id="wrapper">' +
-                '<div id="viewer" class="viewer">' +
-                '<div class="loader">' +
-                '<div class="iviewer-spinner">' +
-                '</div>' +
-                '<span></span>' +
-                '</div>' +
-                '</div>' +
-                '</div>')
+                                '<div id="viewer" class="viewer">' +
+                                    '<div class="loader">' +
+                                        '<div class="iviewer-spinner">' +
+                                        '</div>' +
+                                        '<span>' +
+                                        '</span>' +
+                                    '</div>' +
+                                '</div>' +
+                           '</div>')
                 .appendTo(this.body);
         },
         start: function (imgUrl) {
