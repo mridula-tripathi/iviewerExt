@@ -1,12 +1,10 @@
 {
-  "name": "angular-seed",
+  "name": "iviewer extension",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
-  "license": "MIT",
+  "description": "An extension to iviewer",
+  "repository": "https://github.com/mridula-tripathi/iviewerExt/tree/master/js",
   "devDependencies": {
-    
     "http-server": "^0.6.1"
   },
   "scripts": {
